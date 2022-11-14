@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 3613301 */
+  src: url('//at.alicdn.com/t/c/font_3613301_gjib0rjyai6.woff2?t=1661530815527') format('woff2'),
+  url('//at.alicdn.com/t/c/font_3613301_gjib0rjyai6.woff?t=1661530815527') format('woff'),
+  url('//at.alicdn.com/t/c/font_3613301_gjib0rjyai6.ttf?t=1661530815527') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.behero-dashboard:before {
+  content: "\e754";
+}
+
+.behero-text:before {
+  content: "\e600";
+}
+
+.behero-setting:before {
+  content: "\e601";
+}
+
+.behero-markdown:before {
+  content: "\e974";
+}
+
+.behero-views:before {
+  content: "\e8dc";
+}
+
+.behero-teacher:before {
+  content: "\e633";
+}
+
+.behero-form:before {
+  content: "\ec4e";
+}
+
+.behero-student:before {
+  content: "\e659";
+}
+
+.behero-workbench:before {
+  content: "\e651";
+}

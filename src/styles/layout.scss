@@ -1,0 +1,76 @@
+@import "variables";
+
+.layout {
+  height: 100%;
+  display: flex;
+
+  .sidebar-container {
+    position: fixed;
+    width: $sideBarWidth;
+    height: 100%;
+    background-color: $menuBg;
+    overflow: hidden !important;
+    transition: width .28s;
+
+    .horizontal-collapse-transition {
+      transition: 0s width ease-in-out, 0s padding-left ease-in-out, 0s padding-right ease-in-out;
+    }
+  }
+
+  .el-menu {
+    border: none;
+
+    .el-menu--collapse  .el-submenu__title span{
+      display: none;
+    }
+    /*隐藏 > */
+    .el-menu--collapse  .el-submenu__title .el-submenu__icon-arrow{
+      display: none;
+    }
+  }
+
+  .submenu-title-noDropdown {
+    .el-submenu__icon-arrow {
+      display: none;
+    }
+
+    .el-submenu__title span{
+      display: none;
+    }
+  }
+
+  .el-menu:not(.el-menu--collapse) {
+    width: $sideBarWidth;
+  }
+
+  .main-container {
+    position: relative;
+    margin-left: $sideBarWidth;
+    width: calc(100% - #{$sideBarWidth});
+    transition: all .28s;
+
+    .navbar {
+      height: 50px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // 添加侧边栏滚动条
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+  }
+
+  .el-scrollbar__bar.is-vertical {
+    right: 0px;
+  }
+
+  .el-scrollbar {
+    height: 100%;
+  }
+
+  .app-main {
+    padding: 20px;
+  }
+}
+
